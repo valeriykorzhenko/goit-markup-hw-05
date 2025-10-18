@@ -559,7 +559,7 @@ overflow: hidden;
         border: 1px solid rgba(0, 0, 0, 0.1);
         padding: 0;
        background-color: #e7e9fc;
-        transition: fill, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
             border 250ms cubic-bezier(0.4, 0, 0.2, 1);
         border-radius: 50%;
             stroke-width: 1px;
@@ -583,10 +583,14 @@ overflow: hidden;
 }
 
 .modal-form-field{
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 .modal-form-label {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
     display: block;
     margin-bottom: 4px;
 }
@@ -601,6 +605,7 @@ overflow: hidden;
         width: 360px;
         height: 40px;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        background-color: transparent;
 }
 
 .modal-form-input:focus {
@@ -634,6 +639,9 @@ position: relative;
             font-size: 12px;
             letter-spacing: 0.04em;
             padding: 8px 16px;
+            line-height: 1.17;
+            color:rgba(46, 47, 66, 0.4);
+            background-color: transparent;
 }
 
 .modal-form-message:focus {
@@ -661,11 +669,16 @@ border-radius: 2px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: border-color, background-color;
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        fill: transparent;
 }
 
 input[type="checkbox"]:checked + .agreement-wrapper > .agreement-checkbox {
    background-color: #404bbf;
-   border-color: #404bbf;
+   border: none;
+   fill: #f4f4fd;
    color: #fff;
 }
 
@@ -676,7 +689,7 @@ input[type="checkbox"]:checked + .agreement-wrapper > .agreement-checkbox {
 .agreement-wrapper {
     font-weight: 400;
         font-size: 12px;
-        line-height: 1.2;
+        line-height: 1.17;
         letter-spacing: 0.04em;
         color: #8e8f99;
 }
