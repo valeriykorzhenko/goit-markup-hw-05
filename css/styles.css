@@ -538,13 +538,14 @@ overflow: hidden;
     gap: 24px;
 }
 
-.footer-right {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 80px;
+    .footer-right {
+        display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 40px;
+        }
     
-}
+
 
 .backdrop {
     position: fixed;
