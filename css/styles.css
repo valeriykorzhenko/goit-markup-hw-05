@@ -667,8 +667,6 @@ position: relative;
   color: transparent;
 border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: border-color, background-color;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -684,14 +682,8 @@ border: none;
 }
 
 .agreement-checkbox-icon {
-    opacity: 0;
     fill: #f4f4fd;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
-}
-
-input:checked+label .agreement-checkbox-icon {
-    opacity: 1;
 }
 
 .agreement-wrapper {
