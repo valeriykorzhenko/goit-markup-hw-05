@@ -622,6 +622,7 @@ overflow: hidden;
 }
 
 .modal-form-wrapper {
+    margin-bottom: 8px;
 position: relative;
 }
 
@@ -675,15 +676,14 @@ border-radius: 2px;
         fill: transparent;
 }
 
-input[type="checkbox"]:checked + .agreement-wrapper > .agreement-checkbox {
-   background-color: #404bbf;
-   border: none;
-   fill: #f4f4fd;
-   color: #fff;
+input:checked + label > span {
+background-color: #404bbf;
+fill: #f4f4fd;
+border: none;
 }
 
 .agreement-checkbox-icon {
-    fill: currentColor;
+    fill: #f4f4fd;
 }
 
 .agreement-wrapper {
