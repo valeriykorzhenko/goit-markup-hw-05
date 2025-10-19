@@ -586,6 +586,10 @@ overflow: hidden;
     margin-bottom: 8px;
 }
 
+.form {
+    margin-bottom: 16px;
+}
+
 .modal-form-label {
     font-size: 12px;
     line-height: 1.17;
@@ -735,6 +739,7 @@ border: none;
     background-color: #4D5AE5;
     border: none;
     border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-icon {
