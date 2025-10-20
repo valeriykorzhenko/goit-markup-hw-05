@@ -754,3 +754,7 @@ border: none;
 .sub-btn:hover {
     background-color: #404bbf;
 }
+
+.sub-input::placeholder {
+    color: #fff;
+}
